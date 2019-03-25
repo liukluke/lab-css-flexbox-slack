@@ -27,18 +27,17 @@ p {
     font-size: 2rem;
     line-height: 1.5em;
     color:#5b5e6d;
-    
 }
 
 .main-nav {
     display: flex;
     position:fixed;
     background-color: #ffffff;
-    border-bottom: 1px solid #F4F3F4;
+    border-bottom: 1px solid #C0C1C4;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    padding: 0 8%;
+    padding: 0 10%;
 }
 
 .main-nav .logo-slack{
@@ -46,7 +45,7 @@ p {
 }
 
 .main-nav .menu-lines{
-    width: 7%;    
+    width:  7%;    
 }
 
 .main-nav ul{
@@ -54,7 +53,7 @@ p {
 }
 
 .header {
-    padding: 15vh 10% 10% 10%;
+    padding: 15vh 10% 0 10%;
     display: flex;
     flex-direction: column; 
     align-items: stretch;
@@ -69,38 +68,45 @@ p {
     margin: 10% 0; 
 }
 
+.input-button {
+    display: flex;
+    flex-direction: column;
+}
+
 .input-style {
-    padding: 20px;
-    border-radius:5px;
-    border: 1px solid #F4F3F4;
-    font-size: 1.5rem;
+    border: 1px solid #C0C1C4;
     margin-bottom: 5%; 
+    border-radius:5px;
+    padding: 20px;
+    font-size: 1.5rem; 
 }
 
 .button-style {
     background-color: #192592;
-    padding: 20px;
+    color: #fff; 
     border-radius:5px;
-    color: #fff;
+    padding: 20px;
     font-size: 1.5rem; 
 }
 
+.header .link-sign-in {
+    line-height: 0;
+    margin: 10% 0 20% 0;  
+}
+
 .link-sign-in {
-    text-align: center;
+    text-align: center;  
 }
 
 .main {
-    background-color:#F4F3F4;
-    padding: 15% 10%;
-    display: flex;
-    flex-direction:column; 
+    padding:  0;
+    width: 100%;
 }
 
 .company-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    background-color:#F4F3F4;
+    padding: 10%;
+    text-align: center;
 }
 
 .company-section p { 
@@ -110,12 +116,300 @@ p {
 .company-section .button-main {
     background-color: #fff;
     color: #192592;
-    width: 100%;
     border-color: #192592;
+    margin: 10% 0;  
 }
 
 .company-section img {
     width: 80%;
-    padding: 8%; 
-    
+    padding: 13% 0;   
 }
+
+.company-section span:last-child {
+    border-bottom:none; 
+}
+
+.company-section span {
+    border-bottom: 1px solid #C0C1C4;
+}
+
+.main-SignIn {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    align-items: stretch;
+    text-align: center;
+}
+
+.main-SignIn p:first-child {
+    font-weight: bold;
+    color: #000000;
+    font-size:2.5rem; 
+}
+
+.main-SignIn .link-sign-in {
+    margin-bottom:2%; 
+}
+
+.footer {
+    border-top: 1px solid #C0C1C4; 
+}
+
+.footer-links {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+ padding: 10%;
+}
+
+.footer-img {
+    flex-basis:100%;
+    margin-bottom:5%; 
+}
+.footer-links img {
+    width: 20%;
+}
+
+.footer-links ul {
+    flex-basis: 50%; 
+    list-style: none; 
+    color:  #5b5e6d;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.footer-links ul li:first-child {
+    font-size: 1.6rem;
+    margin-top:5%; 
+}
+
+.footer-final {
+    background-color:#F4F3F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15%;
+    color:  #5b5e6d;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 15vh;
+}
+
+.footer-final ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.foter-lenguage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foter-lenguage img {
+    width: 5%;
+}
+
+.foter-lenguage span {
+    margin: 0 5%;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social :nth-child(2) {
+    margin:0 5%; 
+}
+
+@media (min-width: 768px) { 
+
+    h1 {
+        font-size:7.5rem; 
+    }
+    
+    h2 {
+        font-size:5rem; 
+    }
+    
+    p {
+        font-size: 2.5rem;
+        line-height: 1.5em;
+    }
+
+    .main-nav {
+        padding: 0 5%;
+    }
+
+    .main-nav .logo-slack{
+        width: 15%;    
+    }
+    
+    .main-nav .menu-lines{
+        width: 5%;    
+    }
+
+    .header {
+        padding: 15vh 5% 0 5%;
+    }
+
+    .header p { 
+        margin: 5% 0; 
+    }
+
+    .input-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 70%;
+    }
+
+    .input-style {
+        padding: 25px ;
+        border-radius:5px;
+        font-size: 2rem;
+        flex-grow: 3;
+    }
+    
+    .button-style {
+        padding: 25px;
+        border-radius:5px;
+        font-size: 2rem;
+        margin-left: 2%;
+        flex-grow: 1;  
+    }
+
+    .header .link-sign-in {
+        line-height: 0;
+        margin: 0 0 10% 0;  
+    }
+
+    .link-sign-in {
+        text-align: left;  
+    }
+
+    .header img {
+        width: 80%;
+        margin-left:10%; 
+    }
+
+    .company-section {
+        align-items: center;
+    }
+
+    .company-section p { 
+        margin-top:5%; 
+    }
+    
+    .company-section .button-main {
+        margin: 5% 0;
+    }
+
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .company-section span:nth-child(5) {
+        border-bottom:0
+    }
+
+    .company-section span:nth-child(2n) {
+        border-left: 1px solid #C0C1C4;
+    }
+    
+    .company-section span {
+        border-bottom: 1px solid #C0C1C4;
+        flex-basis: 49%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-SignIn {
+        flex-direction: row;
+        padding: 5%;
+        justify-content: flex-start;
+    }
+    
+    .main-SignIn p:first-child {
+        font-size:3rem;
+    }
+    
+    .main-SignIn .link-sign-in {
+        margin-bottom:2%;
+    }
+
+    .main-try {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;  
+    }
+    
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 5%;
+       }
+       
+       .footer-img {
+           flex-basis:50%;
+           margin-bottom:0; 
+       }
+       .footer-links img {
+           width: 50%;
+       }
+       
+       .footer-links ul {
+           flex-basis: 50%; 
+           font-size: 1.9rem;
+       }
+       
+       .footer-links ul li:first-child {
+           font-size:2rem;
+           margin-top:0; 
+       }
+       
+       .footer-final {
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0 5%;
+           font-size: 2rem;
+       }
+       
+       .footer-final ul {
+           flex-basis: 40%;
+       }
+       
+       .foter-lenguage {
+           justify-content: flex-end;
+           flex-basis: 40%;
+       }
+       
+       .foter-lenguage span {
+           margin: 0 5%;
+       }
+       
+       .footer-social {
+           justify-content: space-between;
+           flex-basis: 10%;
+       }
+       
+       .footer-social :nth-child(2) {
+           margin:0; 
+       }
+       
+
+
+}
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) { }
